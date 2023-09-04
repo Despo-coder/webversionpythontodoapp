@@ -18,7 +18,7 @@ def addTodo():
 
 sl.title('My Todo App')
 sl.subheader('Welcome to the app')
-sl.write('This app is to create list of things to do')
+sl.write('This app is to create list of things to do. To complete/remove just check the box.')
 
 for index, todo in enumerate(todos) :
     checkbox = sl.checkbox(todo, key=index)
@@ -30,4 +30,4 @@ for index, todo in enumerate(todos) :
 
 
 
-sl.text_input(label='.',placeholder='Enter a Todo...' , on_change = addTodo, key='new_todo')
+sl.text_input(label='Todo Items.',placeholder='Enter a Todo...' , on_change = addTodo, key='new_todo')
