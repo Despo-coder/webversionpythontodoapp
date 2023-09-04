@@ -31,5 +31,3 @@ for index, todo in enumerate(todos) :
 
 
 sl.text_input(label='.',placeholder='Enter a Todo...' , on_change = addTodo, key='new_todo')
-
-sl.session_state
